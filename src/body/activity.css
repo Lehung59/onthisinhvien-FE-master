@@ -1,0 +1,102 @@
+.bottom-activity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.top-activity{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.top-activity h2,a{
+    text-align: center;
+   line-height: 1.5;
+   color :rgb(32, 32, 116);
+}
+.box-ac{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.box-ac:hover{
+    transform: translateY(-15px);
+}
+.box-ac:hover .number-count span,
+.box-ac:hover .number-count div,
+.box-ac:hover .class-count {
+    color:rgb(255, 0, 0);
+}
+
+.box-ac:hover .circle{
+    background-color: red;
+}
+
+.circle-ac{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(191, 212, 247);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    float: left;
+    align-items: flex-start;
+}
+.circle-ac img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+.title-ac {
+    font-weight: bold;
+    margin-top:170px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.time {
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.showMore{
+    margin-left: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.showMore button{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* responsive */
+@media screen and (max-width:740px) {
+    .box-ac{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}

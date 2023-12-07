@@ -1,0 +1,238 @@
+.catogery {
+  background-image: url("https://storage.googleapis.com/onthisinhvien.appspot.com/images/otsvv/background-school.png");
+  width: 100%;
+  background-color: rgb(235, 235, 243);
+}
+
+.catogery1 {
+  width: 90%;
+  margin: 0 auto;
+}
+/*css for top*/
+.top {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.top1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(32, 32, 116);
+}
+
+.top2 {
+  font-size: 17px;
+}
+
+.search {
+  text-align: center;
+}
+.neu {
+  color: rgb(182, 182, 182);
+}
+input {
+  width: 450px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  text-indent: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+  text-indent: 20px;
+}
+/*css for list*/
+/* .list{
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+}
+.box-school{
+    width: calc(25% - 5px); // 25% chiều rộng (2 div trong 1 hàng), có khoảng cách giữa chúng 
+    margin-bottom: 20px; 
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.school{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.school p{
+    text-decoration: none; 
+    font-size: 15px;
+  }
+.school:hover,.box-school:hover {
+    transform: translateY(-5px); 
+    background-color: red; 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    color:rgb(255, 255, 255) ;
+}
+.school:hover .show-more{
+    color:white;
+    background-color: red;
+}
+
+.school:hover .course{
+    color:white;
+}
+.school:hover .neu{
+    color:white;
+}
+.name-school{
+    display: flex;
+    align-content: center;
+}
+.name{
+    font-size: 12px;
+    margin-top: 12px;
+}
+.name p{
+    padding: 0px;
+    margin:auto;
+    font-weight: bold;
+}
+
+
+
+
+.name-school img{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 10px;    
+}
+.information{
+    display: flex;
+    height: 40px;
+    color:rgb(181, 181, 181);
+}
+
+.inner-pic{
+    width:50px;
+    height:100px;
+    
+}
+
+
+.course{
+    margin: 20px auto auto 15px;
+    font-size: 13px;
+}
+.show-more{
+    margin-right: 10px;
+    width: 90px;
+    height: 34px;
+    border-radius: 15px;
+    border: 1px solid #c3d1e4;
+    font-size: 11px;
+    margin-top: 12px;
+    font-style: italic;
+} */
+
+.list {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.box-school {
+  width: calc(25% - 20px);
+  margin: 10px;
+  height: 400px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.school {
+  width: 100%; 
+  height: 100%; 
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.school:hover,
+.box-school:hover {
+  transform: translateY(-5px);
+  background-color: red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+.name-school,
+.information {
+  padding: 10px;
+  align-items: center;
+}
+
+.name-school img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.name-school p,
+.information p {
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  margin: 0;
+}
+.inner img {
+    
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;  
+}
+
+.inner-content{
+    margin: 10px 25px;
+
+}
+.inner-content h4{
+    font-size: 23px;
+    font-weight: bold;
+}
+.name {
+    font-size: 28px; /* Tăng kích thước font thành 18px, bạn có thể điều chỉnh kích thước theo ý muốn */
+    font-weight: bold; /* Làm đậm văn bản */
+  }
+/* responsive */
+@media screen and (max-width: 500px) {
+  .search input {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 620px) {
+  .box-school {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .box-school {
+    width: 100%;
+  }
+}
